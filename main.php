@@ -6,7 +6,7 @@ $max = fgets(stream: STDIN);
 
 $randomNumber = random_int($min , $max);
 
-for($i = 0; $i < 4; $i++){
+for($i = 0; $i < $min; $i++){
 echo "推測した乱数を入力してください : ";
 $predictionNumber = fgets(stream: STDIN);
 if($randomNumber == $predictionNumber){
@@ -15,6 +15,6 @@ if($randomNumber == $predictionNumber){
 } else{
     echo "はずれ";
 };
-}
+};
 
 ?>
